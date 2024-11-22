@@ -3,8 +3,7 @@
 ## Overview
 **Coffee Sales Analysis** leverages SQL and Power BI to explore sales trends, customer behavior, and product performance. This interactive project provides valuable insights into sales patterns, enabling data-driven decision-making.
 
-**👉 Live Dashboard Demo**: [View Dashboard](#)  
-**👉 Project Walkthrough Video**: [Watch on YouTube](#)  
+**👉 Dashboard Demo**: [View Dashboard](#)  
 
 ---
 
@@ -40,19 +39,7 @@ Businesses often struggle to identify patterns and trends in their sales data. T
    - Analyzed sales, orders, and quantities month-on-month.  
    - Used window functions for comparative metrics.  
    - Aggregated data to support visualizations.  
-
-**👉 Example SQL Query**:
-
-```sql
-SELECT  
-    DATE_FORMAT(order_date, '%Y-%m') AS Month,  
-    SUM(sales) AS Total_Sales,  
-    LAG(SUM(sales)) OVER (ORDER BY DATE_FORMAT(order_date, '%Y-%m')) AS Previous_Month_Sales,  
-    (SUM(sales) - LAG(SUM(sales)) OVER (ORDER BY DATE_FORMAT(order_date, '%Y-%m'))) AS Sales_Difference  
-FROM sales_data  
-GROUP BY Month;
-
-
+---
 
 ## SQL Functionalities Used
 
@@ -100,8 +87,7 @@ Here are the actionable insights generated:
 ## Tools and Technologies
 
 - **SQL**: Data cleaning, processing, and analysis.  
-- **Power BI**: Interactive dashboards and visualizations.  
-- **Excel**: Initial data preparation and validation.  
+- **Power BI**: Interactive dashboards and visualizations.   
 
 ---
 
@@ -115,7 +101,7 @@ Here are the actionable insights generated:
 
 ## 📧 Contact Me
 
-- **Email**: [farman@example.com](mailto:farman@example.com)  
+- **Email**: [farman@example.com](mailto:md.farman.data@gmail.com)  
 - **LinkedIn**: [Farman's Profile](#)  
 - **Portfolio**: [Visit My Portfolio](#)  
 

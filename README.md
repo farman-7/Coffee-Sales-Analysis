@@ -51,7 +51,7 @@ SELECT
     (SUM(sales) - LAG(SUM(sales)) OVER (ORDER BY DATE_FORMAT(order_date, '%Y-%m'))) AS Sales_Difference  
 FROM sales_data  
 GROUP BY Month;
----
+
 
 
 ## SQL Functionalities Used
